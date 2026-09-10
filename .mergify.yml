@@ -1,0 +1,11 @@
+queue_rules:
+  - name: default
+    merge_conditions:
+      - check-success=test
+pull_request_rules:
+  - name: queue
+    conditions:
+      - base=main
+    actions:
+      queue:
+        name: default
