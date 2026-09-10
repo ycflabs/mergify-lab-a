@@ -1,0 +1,14 @@
+name: lab-ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "running tests"; sleep 3
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "lint"; exit 1
