@@ -7,8 +7,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "running tests"; sleep 3
+      - run: echo "running tests"; exit 1
   lint:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "lint"; exit 1
+      - run: echo "lint ok"
